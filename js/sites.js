@@ -1,5 +1,5 @@
 const getsite=()=>{
-    fetch(" http://localhost:3000/site")
+    fetch("https://admin.nextjavascript.com/fake-api/site")
     .then((res)=> res.json())
     .then((siteData)=>{
         const {heading, sub_heading}= siteData;

@@ -4,7 +4,7 @@ categories();
 
 const url= new URLSearchParams(window.location.search)
 const userId= url.get("index-id")
-fetch(`http://localhost:3000/posts/${userId}`)
+fetch(`https://admin.nextjavascript.com/fake-api/posts/${userId}`)
 .then(resp=>resp.json())
 .then((post)=>{
     const {title, author,pulished_date,categories,featured_image,content}= post;

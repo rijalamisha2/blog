@@ -1,5 +1,5 @@
 const getposts=()=>{
-    fetch(" http://localhost:3000/posts?_sort=id&_order=desc")
+    fetch("https://admin.nextjavascript.com/fake-api/posts?_sort=id&_order=desc")
     .then((resp)=>resp.json())
     .then((postData)=>{
         const [feature_post, ...rest_post]= postData;

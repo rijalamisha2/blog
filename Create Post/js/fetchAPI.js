@@ -7,7 +7,7 @@ const setPost= ()=>{
     const body= document.getElementById("body").value;
     const content= $('#summernote').summernote('code');
 
-    fetch("http://localhost:3000/posts",{
+    fetch("https://admin.nextjavascript.com/fake-api/posts",{
         method: "POST",
         body: JSON.stringify({
             title,

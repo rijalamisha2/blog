@@ -1,6 +1,7 @@
 
 const categories= ()=>{
-    fetch(" http://localhost:3000/categories")
+    fetch(" 
+https://admin.nextjavascript.com/fake-api/categories")
     .then(resp=>resp.json())
     .then((categories)=>{
         const { name }=categories
