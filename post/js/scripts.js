@@ -7,7 +7,7 @@ const userId= url.get("index-id")
 fetch(`https://admin.nextjavascript.com/fake-api/posts/${userId}`)
 .then(resp=>resp.json())
 .then((post)=>{
-    const {title, author,pulished_date,categories,featured_image,content}= post;
+    const {title, author,pulished_date,categories = [],featured_image,content}= post;
     const HTML = `
     <header class="mb-4">
         <!-- Post title-->
