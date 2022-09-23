@@ -1,0 +1,10 @@
+const getsite=()=>{
+    fetch(" http://localhost:3000/site")
+    .then((res)=> res.json())
+    .then((siteData)=>{
+        const {heading, sub_heading}= siteData;
+        document.querySelector(".heading").textContent= heading;
+        document.querySelector(".sub-heading").textContent= sub_heading;
+    })
+}
+export default getsite;

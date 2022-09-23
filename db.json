@@ -1,0 +1,104 @@
+{
+  "posts": [
+    {
+      "title": "Nature",
+      "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, consequuntur eum consectetur veniam atque quaerat ullam fugiat odio id blanditiis.",
+      "pulished_date": "Janaurary 1,2020",
+      "thumbnail": "https://source.unsplash.com/random/700x350?nature",
+      "author": "Amisha Rijal",
+      "categories": [
+        "web design",
+        "freebies"
+      ],
+      "featured_image": "https://source.unsplash.com/random/900x400?nature",
+      "content": "<h1>Nature</h1><p>For me, the most fascinating interface is Twitter. I have odd cosmic thoughts every day and I realized I could hold them to myself or share them with people who might be interested.</p>",
+      "id": 1
+    },
+    {
+      "title": "City",
+      "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, consequuntur eum consectetur veniam atque quaerat ullam fugiat odio id blanditiis.",
+      "pulished_date": "Janaurary 1,2020",
+      "thumbnail": "https://source.unsplash.com/random/700x350?city",
+      "author": "Amisha Rijal",
+      "categories": [
+        "web design",
+        "freebies"
+      ],
+      "featured_image": "https://source.unsplash.com/random/900x400?city",
+      "content": "<h1>Nature</h1><p>For me, the most fascinating interface is Twitter. I have odd cosmic thoughts every day and I realized I could hold them to myself or share them with people who might be interested.</p>",
+      "id": 2
+    },
+    {
+      "title": "Fruits",
+      "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, consequuntur eum consectetur veniam atque quaerat ullam fugiat odio id blanditiis.",
+      "pulished_date": "Janaurary 1,2020",
+      "thumbnail": "https://source.unsplash.com/random/700x350?fruits",
+      "author": "Sanjib",
+      "categories": [
+        "web design",
+        "freebies"
+      ],
+      "featured_image": "https://source.unsplash.com/random/900x400?fruits",
+      "content": "<h1>Nature</h1><p>For me, the most fascinating interface is Twitter. I have odd cosmic thoughts every day and I realized I could hold them to myself or share them with people who might be interested.</p>",
+      "id": 3
+    },
+    {
+      "title": "Human",
+      "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, consequuntur eum consectetur veniam atque quaerat ullam fugiat odio id blanditiis.",
+      "pulished_date": "Janaurary 1,2020",
+      "thumbnail": "https://source.unsplash.com/random/700x350?human",
+      "author": "Sanjib",
+      "categories": [
+        "web design",
+        "freebies"
+      ],
+      "featured_image": "https://source.unsplash.com/random/900x400?human",
+      "content": "<h1>Nature</h1><p>For me, the most fascinating interface is Twitter. I have odd cosmic thoughts every day and I realized I could hold them to myself or share them with people who might be interested.</p>",
+      "id": 4
+    },
+    {
+      "title": "Nature",
+      "pulished_date": "2022-09-13",
+      "thumbnail": "https://wallpaperaccess.com/full/2421382.jpg",
+      "author": "Amisha Rijal",
+      "categories": [
+        "web design",
+        "freebies"
+      ],
+      "featured_image": "https://webneel.com/wallpaper/sites/default/files/images/08-2018/1-nature-wallpaper-grass-hd.jpg",
+      "body": "Nature, in the broadest sense, is the physical world or universe. \"Nature\" can refer to the phenomena of the physical world, and also to life in general",
+      "content": "<h1>Nature</h1><div class=\"Z26q7c UK95Uc VGXe8\" data-content-feature=\"1\" style=\"contain: layout paint; overflow: hidden; min-width: 0px; flex: 0 0 auto; color: rgb(32, 33, 36); font-family: arial, sans-serif; font-size: 14px; letter-spacing: normal; grid-area: nke7rc / nke7rc / nke7rc / nke7rc;\"><div class=\"VwiC3b yXK7lf MUxGbd yDYNvb lyLwlc\" style=\"color: rgb(77, 81, 86);\"><span style=\"font-weight: bold; color: rgb(95, 99, 104);\">Nature</span>, in the broadest sense, is the physical world or universe. \"<span style=\"font-weight: bold; color: rgb(95, 99, 104);\">Nature</span>\" can refer to the phenomena of the physical world, and also to life in general.</div></div><div class=\"Z26q7c UK95Uc VGXe8\" data-content-feature=\"2\" style=\"contain: layout paint; overflow: hidden; min-width: 0px; flex: 0 0 auto; color: rgb(32, 33, 36); font-family: arial, sans-serif; font-size: 14px; letter-spacing: normal; grid-area: gdePb / gdePb / gdePb / gdePb;\"><div class=\"HiHjCd\" style=\"color: rgb(112, 117, 122);\"><br></div></div>",
+      "id": 6
+    }
+  ],
+  "site": {
+    "heading": "Welcome To My Blog",
+    "sub_heading": "This is my blog"
+  },
+  "categories": [
+    {
+      "id": 1,
+      "name": "HTML"
+    },
+    {
+      "id": 2,
+      "name": "CSS"
+    },
+    {
+      "id": 3,
+      "name": "Tutorials"
+    },
+    {
+      "id": 4,
+      "name": "Web Design"
+    },
+    {
+      "id": 5,
+      "name": "Freebies"
+    },
+    {
+      "id": 6,
+      "name": "Javascript"
+    }
+  ]
+}

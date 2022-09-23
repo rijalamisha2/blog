@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post-Form</title>
+    <link rel="icon" href="./image/fav_icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&display=swap"
+      rel="stylesheet"/>
+      <!-- include libraries(jQuery, bootstrap) -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<!-- include summernote css/js -->
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/post_form.css">
+  </head>
+  <body>
+    <main>
+      <!-- navbar -->
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container">
+              <a class="navbar-brand" href="#!">Start Bootstrap</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                      <li class="nav-item"><a class="nav-link" href="./Post Form/index.html">Create a Post</a></li>
+                      <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Blog</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+      <!-- mid-section containing form -->
+      <section class="wrap-container">
+        <!-- div containing form -->
+        <div class="form-wrap">
+          <h1>CREATE POST DATA</h1>
+          <p>Sending the data in API</p>
+          <form id="form" method="post">
+            <div class="input-fields">
+              <input type="text" name="title" id="title" placeholder=" " />
+              <label for="title">Enter Title Of Post</label>
+            </div>
+
+            <div class="input-fields">
+              <input type="date" name="published_date" id="publishDate" placeholder=" " />
+            </div>
+
+            <div class="input-fields">
+              <input type="url" name="thumbnail" id="thumbnail" placeholder=" " />
+              <label for="thumbnail">Put the link for thumbnail</label>
+            </div>
+
+            <div class="input-fields">
+              <input type="text" name="author" id="author" placeholder=" " />
+              <label for="author">Author Name</label>
+            </div>
+
+
+            <div class="input-fields">
+              <input type="url" name="featured_image" id="featuredImage" placeholder=" " />
+              <label for="featuredImage">Put the link for featured image</label>
+            </div>
+            <div class="input-fields">
+              <textarea name="body" id="body" class="input-body" cols="10" rows="3" placeholder="Here Is Your Body.."></textarea>
+            </div>
+            <div  id="summernote">
+            
+            </div>
+           
+
+            <button type="submit" class="button">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+   
+    <script>
+      $(document).ready(function(){
+
+     $('#summernote').summernote({
+        placeholder: 'Hello Bootstrap 5',
+        height: 100
+      });
+    })
+
+      $(document).ready(function() {
+  });
+
+
+    </script>
+     <script type="module" src="./js/app.js"></script>
+  </body>
+</html>

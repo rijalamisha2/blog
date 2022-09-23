@@ -1,0 +1,119 @@
+$bg-color: linear-gradient(to right, #cb356b, #bd3f32);
+$heading-color: #bd3f32;
+$subheading-color: rgb(173, 172, 172);
+$white: #ffffff;
+$btn-color: #bd3f32;
+$ligher-btn-color: #bf5f55;
+$gray-color:gray;
+$label-focus:rgb(142, 141, 141);
+$input-border:rgb(142, 141, 141);
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  // background-image: $bg-color;
+  letter-spacing: 1px;
+}
+h1 {
+  font-size: 1.8rem;
+  color: $heading-color;
+  text-align: center;
+}
+
+
+
+// ul {
+//   display: flex;
+//   justify-content: center;
+//   li {
+//     position: relative;
+//     list-style: none;
+//     margin: 1rem;
+//     font-size: 1.3rem;
+//     font-weight: bold;
+//   }
+// }
+
+.wrap-container {
+  padding: 1rem;
+  width: 80%;
+  margin: 2rem auto;
+  // border: 1px solid white;
+  p {
+    color: $subheading-color;
+    text-align: center;
+  }
+  .form-wrap {
+    width: 45%;
+    margin: auto;
+    padding: 1rem;
+    background-color: $white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 0.2rem;
+  }
+}
+
+form {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  & > div {
+    position: relative;
+    & > label {
+      position: absolute;
+      top: 0;
+      left: 1.2rem;
+      color: $gray-color;
+      font-size: 0.8rem;
+      pointer-events: none;
+      transform: translateY(1.6rem);
+      transition: all 400ms ease-in-out;
+      
+    }
+    & > input:focus + label {
+      font-size: 0.8rem;
+      color: $label-focus;
+      transform: translateY(0.8rem);
+    }
+     & input:not(:placeholder-shown) + label{
+      color: $label-focus;
+        transform: translateY(0.8rem);
+    }
+   
+  }
+  input, .input-body {
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 1px solid $input-border;
+    outline: none;
+    width: 100%;
+    border-radius: 0.2rem;
+  }
+}
+.input-body{
+  resize: none;
+  color: $gray-color;
+  font-size: 1rem;
+  
+}
+
+
+.button {
+  padding: 1rem;
+  width: 45%;
+  margin: 1.5rem auto;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: $btn-color;
+  color: $white;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  &:hover {
+    cursor: pointer;
+    background-color: $ligher-btn-color;
+  }
+}
