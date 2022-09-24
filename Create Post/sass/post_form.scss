@@ -81,7 +81,7 @@ form {
     }
      & input:not(:placeholder-shown) + label{
       color: $label-focus;
-        transform: translateY(0.8rem);
+      transform: translateY(0.8rem);
     }
    
   }

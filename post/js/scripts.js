@@ -1,4 +1,4 @@
-import categories from "../../common/categories.js"
+import categories from "../../common Category/categories.js"
 
 categories();
 
@@ -7,13 +7,13 @@ const userId= url.get("index-id")
 fetch(`https://admin.nextjavascript.com/fake-api/posts/${userId}`)
 .then(resp=>resp.json())
 .then((post)=>{
-    const {title, author,pulished_date,categories = [],featured_image,content}= post;
+    const {title, author,published_date,categories = [],featured_image,content}= post;
     const HTML = `
     <header class="mb-4">
         <!-- Post title-->
         <h1 class="fw-bolder mb-1">${title}</h1>
         <!-- Post meta content-->
-        <div class="text-muted fst-italic mb-2">Posted on ${pulished_date} by ${author}</div>
+        <div class="text-muted fst-italic mb-2">Posted on ${published_date} by ${author}</div>
         <!-- Post categories-->
 
         ${categories.map(category=>(
