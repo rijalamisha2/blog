@@ -6,7 +6,7 @@ const getPost= ()=>{
     const body= document.getElementById("body").value;
     const content= $('#summernote').summernote('code');
     const date= new Date();
-const Data=()=>{
+
     const formData= {
         title,
         published_date: date,
@@ -16,18 +16,17 @@ const Data=()=>{
         body,
         content
     }
-    return formData;
-}
+
   
     fetch("https://admin.nextjavascript.com/fake-api/posts",{
         method: "POST",
-        body: JSON.stringify(Data()),
+        body: JSON.stringify(formData),
         headers:{
             "Content-Type":"application/json"
         }
     })
         .then(resp=>{
-            const auth= Data().author;
+         
             if(!resp.ok){
                 resp.json().then(()=>{
                     alert("Error Occur !")
@@ -35,7 +34,7 @@ const Data=()=>{
             }
             else if(resp.ok){ 
 
-                alert(auth);
+                alert("Data sucessfully send");
                 
             }
         } )
