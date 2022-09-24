@@ -40,7 +40,7 @@ const getposts=()=>{
          deleteButton.forEach(el=>{
             el.addEventListener("click", ()=>{
                 const postId= el.getAttribute("data-id");
-                // deletePost(`${postId}`)
+                deletePost(`${postId}`)
                 el.parentElement.parentElement.classList.add("d-none")
             })
          })
