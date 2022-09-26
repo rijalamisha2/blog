@@ -31,10 +31,13 @@ const getPost= ()=>{
                     alert("Error Occur !")
                 })
             }
-            else if(resp.ok){ 
+            // else if(resp.ok){ 
 
-                alert("Data sucessfully send");
+            //     alert("Data sucessfully send");
                 
+            // }
+            else{
+                window.location.href="../../Home Page/index.html"
             }
         } )
 

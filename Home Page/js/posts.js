@@ -13,6 +13,7 @@ const getposts=()=>{
             <h2 class="card-title feature-title">${title}</h2>
             <p class="card-text feature-body">${body}</p>
             <a class="btn btn-primary" href="../post/index.html?index-id=${id}">Read more →</a>
+            <a class="btn btn-outline-danger delete-post"  data-id="${id}" href="#!">Delete Post</a>
         </div>
         `
         document.querySelector("#featurePost").innerHTML= featurePost;
@@ -28,8 +29,8 @@ const getposts=()=>{
                     <div class="small text-muted">${published_date}</div>
                     <h2 class="card-title h4">${title}</h2>
                     <p class="card-text">${body}</p>
-                    <a class="btn btn-primary" href="#!">Read more →</a>
-                    <a class="btn btn-outline-danger delete-post"  data-id="${id}" href="#!">Delete Post</a>
+                    <a class="btn btn-primary" href="#!" >Read more →</a>
+                    <a class="btn btn-outline-danger delete-post" data-id="${id}" href="#!">Delete Post</a>
                     
                 </div>
             </div>
@@ -43,6 +44,8 @@ const getposts=()=>{
                 const postId= el.getAttribute("data-id");
                 deletePost(`${postId}`)
                 el.parentElement.parentElement.classList.add("d-none")
+                
+           
             })
          })
          const deletePost= (id)=>{
