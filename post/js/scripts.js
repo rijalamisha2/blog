@@ -3,7 +3,7 @@ import categories from "../../common Category/categories.js"
 categories();
 
 const url= new URLSearchParams(window.location.search)
-const userId= url.get("index-id")
+const userId= url.get("index-id");
 fetch(`https://admin.nextjavascript.com/fake-api/posts/${userId}`)
 .then(resp=>resp.json())
 .then((post)=>{

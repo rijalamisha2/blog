@@ -5,19 +5,18 @@ const getPost= ()=>{
     const featured_image=document.getElementById("featuredImage").value;
     const body= document.getElementById("body").value;
     const content= $('#summernote').summernote('code');
-    const date= new Date();
-
+    // const date= new Date();
+    let options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const published_date = new Intl.DateTimeFormat('en-GB', options).format(new Date());
     const formData= {
         title,
-        published_date: date,
+        published_date,
         thumbnail,
         author,
         featured_image,
         body,
         content
-    }
-
-  
+    }  
     fetch("https://admin.nextjavascript.com/fake-api/posts",{
         method: "POST",
         body: JSON.stringify(formData),

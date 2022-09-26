@@ -5,6 +5,7 @@ const getposts=()=>{
         const [feature_post, ...rest_post]= postData;
         const {featured_image,id, published_date,title, body} =feature_post;
         // document.querySelector(".feature-image").innerHTML= image_url;
+    
         const featurePost= `
         <a href="../post/index.html?index-id=${id}"><img class="card-img-top feature-image" src="${featured_image}" alt="${title}" /></a>
         <div class="card-body">
